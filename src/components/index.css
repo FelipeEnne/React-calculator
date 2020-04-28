@@ -4,14 +4,15 @@
 }
 
 .display-calc {
-    background-color: #8080808c;
+    background-color: gray;
     width: 100%;
-    height: 75px;
+    height: 100px;
     text-align: end;
 }
 
 .display-value {
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: bold;
     color: white;
     padding-top: 20px;
     margin-right: 10px;
