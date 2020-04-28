@@ -15,30 +15,30 @@ class ButtonPanel extends React.Component {
           {this.renderbutton('AC', 'ACid')}
           {this.renderbutton('+/-', '+/-id')}
           {this.renderbutton('%', '%id')}
-          {this.renderbutton('÷', '÷id', '#ffa500c9')}
+          {this.renderbutton('÷', '÷id', false)}
         </div>
         <div className="panel-row">
           {this.renderbutton('7', '7id')}
           {this.renderbutton('8', '8id')}
           {this.renderbutton('9', '9id')}
-          {this.renderbutton('x', 'xid', '#ffa500c9')}
+          {this.renderbutton('x', 'xid', false)}
         </div>
         <div className="panel-row">
           {this.renderbutton('4', '4id')}
           {this.renderbutton('5', '5id')}
           {this.renderbutton('6', '6id')}
-          {this.renderbutton('-', '-id', '#ffa500c9')}
+          {this.renderbutton('-', '-id', false)}
         </div>
         <div className="panel-row">
           {this.renderbutton('1', '1id')}
           {this.renderbutton('2', '2id')}
           {this.renderbutton('3', '3id')}
-          {this.renderbutton('+', '+id', '#ffa500c9')}
+          {this.renderbutton('+', '+id', false)}
         </div>
         <div className="panel-row-last">
           {this.renderbutton('0', '0id')}
           {this.renderbutton('.', '.id')}
-          {this.renderbutton('=', '=id', '#ffa500c9')}
+          {this.renderbutton('=', '=id', false)}
         </div>
       </div>
     );
