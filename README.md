@@ -35,6 +35,14 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 * Implement the Button component
 * Implement the ButtonPanel component
 
+### Adding Styling
+
+* Use grid display mode for App, Display and ButtonPanel component
+* Style the Display component
+* Style the ButtonPanel component
+* Style the Button component
+* Pass “color” and “wide” props to the Button
+
 ### Built With 
 
 * Node.js
