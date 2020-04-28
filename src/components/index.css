@@ -20,12 +20,13 @@
 
 .panel-row{
     display: grid;
+    height: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .button-calc {
     width: 100%;
-    height: 100px;
+    height: 100%;
     border-style: solid;
     border-color: #ffffffa3;
     font-size: 20px;
