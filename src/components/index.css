@@ -3,9 +3,16 @@
     width: 50%;
 }
 
-.DisplayCalc {
+.display-calc {
     background-color: #8080808c;
     width: 100%;
     height: 50px;
     text-align: end;
+}
+
+.display-value {
+    font-size: 35px;
+    color: white;
+    padding-top: 4px;
+    margin-right: 10px;
 }

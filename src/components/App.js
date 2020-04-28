@@ -7,7 +7,6 @@ import './index.css';
 import Display from './Display';
 
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="calculator">
-        <Display />
+        <Display value={0} />
       </div>
     );
   }
