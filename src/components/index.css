@@ -19,20 +19,15 @@
 }
 
 .panel-row{
-    display: grid;
+    display: flex;
     height: 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content:stretch;
 }
 
 .button-calc {
-    width: 100%;
+    width: 25%;
     height: 100%;
     border-style: solid;
     border-color: #ffffffa3;
     font-size: 20px;
-}
-
-.panel-row-last {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
 }
