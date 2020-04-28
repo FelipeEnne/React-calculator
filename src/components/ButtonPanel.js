@@ -9,36 +9,37 @@ class ButtonPanel extends React.Component {
   }
 
   render() {
+    const gray = 'rgba(128, 128, 128, 0.22)';
     return (
       <div className="buttonPanel">
         <div className="panel-row">
-          {this.renderbutton('AC', 'ACid')}
-          {this.renderbutton('+/-', '+/-id')}
-          {this.renderbutton('%', '%id')}
-          {this.renderbutton('÷', '÷id', false)}
+          {this.renderbutton('AC', 'ACid', gray)}
+          {this.renderbutton('+/-', '+/-id', gray)}
+          {this.renderbutton('%', '%id', gray)}
+          {this.renderbutton('÷', '÷id')}
         </div>
         <div className="panel-row">
-          {this.renderbutton('7', '7id')}
-          {this.renderbutton('8', '8id')}
-          {this.renderbutton('9', '9id')}
-          {this.renderbutton('x', 'xid', false)}
+          {this.renderbutton('7', '7id', gray)}
+          {this.renderbutton('8', '8id', gray)}
+          {this.renderbutton('9', '9id', gray)}
+          {this.renderbutton('x', 'xid')}
         </div>
         <div className="panel-row">
-          {this.renderbutton('4', '4id')}
-          {this.renderbutton('5', '5id')}
-          {this.renderbutton('6', '6id')}
-          {this.renderbutton('-', '-id', false)}
+          {this.renderbutton('4', '4id', gray)}
+          {this.renderbutton('5', '5id', gray)}
+          {this.renderbutton('6', '6id', gray)}
+          {this.renderbutton('-', '-id')}
         </div>
         <div className="panel-row">
-          {this.renderbutton('1', '1id')}
-          {this.renderbutton('2', '2id')}
-          {this.renderbutton('3', '3id')}
-          {this.renderbutton('+', '+id', false)}
+          {this.renderbutton('1', '1id', gray)}
+          {this.renderbutton('2', '2id', gray)}
+          {this.renderbutton('3', '3id', gray)}
+          {this.renderbutton('+', '+id')}
         </div>
         <div className="panel-row">
-          {this.renderbutton('0', '0id', true, 2)}
-          {this.renderbutton('.', '.id')}
-          {this.renderbutton('=', '=id', false)}
+          {this.renderbutton('0', '0id', gray, false)}
+          {this.renderbutton('.', '.id', gray)}
+          {this.renderbutton('=', '=id')}
         </div>
       </div>
     );

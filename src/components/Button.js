@@ -4,12 +4,10 @@ import PropTypes from 'prop-types';
 function Button({
   nameButton, idButton, colorButton, wideButton,
 }) {
-  const colorB = colorButton ? 'rgba(128, 128, 128, 0.22)' : 'rgba(255, 165, 0, 0.79)';
-  const wideB = wideButton * 25;
-  const wideR = `${wideB}%`;
+  const wideB = wideButton ? '25%' : '50%';
 
   return (
-    <button type="button" className="button-calc" id={idButton} style={{ backgroundColor: colorB, width: wideR }}>
+    <button type="button" className="button-calc" id={idButton} style={{ backgroundColor: colorButton, width: wideB }}>
       {nameButton}
     </button>
   );
@@ -18,15 +16,15 @@ function Button({
 Button.propTypes = {
   nameButton: PropTypes.string,
   idButton: PropTypes.string,
-  colorButton: PropTypes.bool,
-  wideButton: PropTypes.number,
+  colorButton: PropTypes.string,
+  wideButton: PropTypes.bool,
 };
 
 Button.defaultProps = {
   nameButton: '',
   idButton: '',
-  colorButton: true,
-  wideButton: 1,
+  colorButton: 'rgba(255, 165, 0, 0.79)',
+  wideButton: true,
 };
 
 export default Button;
