@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unused-state */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Big from 'big.js';
+import Big from 'big';
 import PropTypes from 'prop-types';
 import './index.css';
 import Display from './Display';
