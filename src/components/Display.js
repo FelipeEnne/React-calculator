@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display({ value }) {
+function Display({ result }) {
   return (
     <div className="display-calc">
-      <div className="display-value">
-        {value}
+      <div className="display-value" id="display">
+        {result}
       </div>
     </div>
   );
 }
 
 Display.propTypes = {
-  value: PropTypes.number,
+  result: PropTypes.string,
 };
 
 Display.defaultProps = {
-  value: 0,
+  result: '0',
 };
 
 export default Display;

@@ -5,20 +5,21 @@ import Big from 'big.js';
 import PropTypes from 'prop-types';
 import './index.css';
 import Display from './Display';
-
+import ButtonPanel from './ButtonPanel';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: 0,
+      value: 0,
     };
   }
 
   render() {
     return (
       <div className="calculator">
-        <Display value={0} />
+        <Display />
+        <ButtonPanel />
       </div>
     );
   }
