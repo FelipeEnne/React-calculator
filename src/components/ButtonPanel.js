@@ -29,6 +29,12 @@ class ButtonPanel extends React.Component {
           {this.renderbutton('6', '6id')}
           {this.renderbutton('-', '-id', '#ffa500c9')}
         </div>
+        <div className="panel-row">
+          {this.renderbutton('1', '1id')}
+          {this.renderbutton('2', '2id')}
+          {this.renderbutton('3', '3id')}
+          {this.renderbutton('+', '+id', '#ffa500c9')}
+        </div>
         <div className="panel-row-last">
           {this.renderbutton('0', '0id')}
           {this.renderbutton('.', '.id')}
