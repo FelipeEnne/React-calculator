@@ -19,6 +19,29 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 
 <img src="./public/assets/img/calculator.png" alt="img" />
 
+### Basic project structure
+
+* Create a react app with create-react-app
+* Delete the unnecessary file and assets
+* Add the big.js
+* Verify if everything is ok
+* Deploy to Heroku (https://calc-app-react.herokuapp.com/)
+
+### Create components
+
+* Prepare the directory structure
+* Implement the App component
+* Implement the Display component
+* Implement the Button component
+* Implement the ButtonPanel component
+
+### Basic project structure
+
+* Create a react app with create-react-app
+* Delete the unnecessary file and assets
+* Add the big.js
+* Verify if everything is ok
+* Deploy to Heroku (https://calc-app-react.herokuapp.com/)
 
 ### Built With 
 
