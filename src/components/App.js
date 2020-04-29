@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
 import React from 'react';
-import Big from 'big.js';
 import PropTypes from 'prop-types';
+import Big from 'big.js';
 import './index.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
