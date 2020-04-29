@@ -15,7 +15,9 @@ function calculate({ dataCalc, buttonCalc }) {
       total = (parseFloat(total) * -1).toString();
       break;
     case opertionCalc.includes(buttonCalc):
-      [total, next, operation] = [next, null, buttonCalc];
+      next = total;
+      total = null;
+      operation = buttonCalc;
       break;
     case number.includes(buttonCalc):
       total = total ? total = buttonCalc : total += buttonCalc;
