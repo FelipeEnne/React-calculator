@@ -9,7 +9,9 @@ function calculate({ dataCalc, buttonCalc }) {
 
   switch (buttonCalc) {
     case 'AC':
-      [total, next, operation] = ['0', null, null];
+      next = '0';
+      total = null;
+      operation = null;
       break;
     case '+/-':
       total = (parseFloat(total) * -1).toString();
@@ -23,7 +25,7 @@ function calculate({ dataCalc, buttonCalc }) {
       total = total ? total = buttonCalc : total += buttonCalc;
       break;
     case '=':
-      total = dataCalc;
+      total = operate(total, next, operation).toString();
       next = total;
       break;
     default:
