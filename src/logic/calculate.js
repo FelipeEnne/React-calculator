@@ -9,7 +9,7 @@ function calculate({ dataCalc, buttonCalc }) {
 
   switch (buttonCalc) {
     case 'AC':
-      next = '0';
+      next = null;
       total = null;
       operation = null;
       break;
