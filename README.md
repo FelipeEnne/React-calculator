@@ -43,6 +43,14 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 * Style the Button component
 * Pass “color” and “wide” props to the Button
 
+### Calculations 
+
+* Preparation
+* Implement the calculate.js module
+* Implement the operate.js module
+* Add calculate.js to the App component
+
+
 ### Built With 
 
 * Node.js
