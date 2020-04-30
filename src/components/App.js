@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unused-state */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -20,9 +19,9 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(buttonName) {
+  handleClick(nameButton) {
     const { total, next, operation } = this.state;
-    const calc = calculate({ total, next, operation }, buttonName);
+    const calc = calculate({ total, next, operation }, nameButton);
 
     this.setState(() => ({
       total: calc.total,
