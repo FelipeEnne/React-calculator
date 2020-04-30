@@ -19,7 +19,7 @@ function operate({ numberOne, numberTwo, operation }) {
       total = Big(numberOne).div(numberTwo);
       break;
     case opertionCalc[4]:
-      total = Big(numberOne).times(numberTwo) / 100;
+      total = Big(numberOne) / 100;
       break;
     default:
       break;
