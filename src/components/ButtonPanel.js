@@ -6,10 +6,10 @@ import Button from './Button';
 class ButtonPanel extends React.Component {
   constructor(props) {
     super(props);
-    this.clickHandler = this.clickHandler.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  clickHandler(nameButton) {
+  handleClick(nameButton) {
     const { clickHandler } = this.props;
     clickHandler(nameButton);
   }
@@ -22,6 +22,7 @@ class ButtonPanel extends React.Component {
         idButton={id}
         colorButton={color}
         wideButton={wide}
+        clickHandler={this.handleClick}
       />
     );
   }

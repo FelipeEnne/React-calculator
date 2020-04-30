@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
-import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 import './index.css';
 import Display from './Display';
@@ -31,12 +29,16 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next, operation } = this.state;
+    let { total } = this.state;
+
+    if (total == null) {
+      total = '0';
+    }
 
     return (
       <div className="calculator">
-        <Display value={total} />
-        <ButtonPanel handleClick={this.handleClick} />
+        <Display result={total} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
   }
