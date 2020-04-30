@@ -50,6 +50,11 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 * Implement the operate.js module
 * Add calculate.js to the App component
 
+### Event handlers 
+
+* App component
+* ButtonPanel
+* Button
 
 ### Built With 
 
