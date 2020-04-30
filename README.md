@@ -41,7 +41,7 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 * Style the Display component;
 * Style the ButtonPanel component;
 * Style the Button component;
-* Pass “color” and “wide” props to the Button;
+* Pass “color” and “wide” props to the Button.
 
 ### Calculations 
 
