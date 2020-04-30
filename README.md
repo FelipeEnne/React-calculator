@@ -21,27 +21,35 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 
 ### Basic project structure
 
-* Create a react app with create-react-app
-* Delete the unnecessary file and assets
-* Add the big.js
-* Verify if everything is ok
-* Deploy to Heroku (https://calc-app-react.herokuapp.com/)
+* Create a react app with create-react-app;
+* Delete the unnecessary file and assets;
+* Add the big.js;
+* Verify if everything is ok;
+* Deploy to Heroku (https://calc-app-react.herokuapp.com/).
 
 ### Create components
 
-* Prepare the directory structure
-* Implement the App component
-* Implement the Display component
-* Implement the Button component
-* Implement the ButtonPanel component
+* Prepare the directory structure;
+* Implement the App component;
+* Implement the Display component;
+* Implement the Button component;
+* Implement the ButtonPanel component.
 
 ### Adding Styling
 
-* Use grid display mode for App, Display and ButtonPanel component
-* Style the Display component
-* Style the ButtonPanel component
-* Style the Button component
-* Pass “color” and “wide” props to the Button
+* Use grid display mode for App, Display and ButtonPanel component;
+* Style the Display component;
+* Style the ButtonPanel component;
+* Style the Button component;
+* Pass “color” and “wide” props to the Button.
+
+### Calculations 
+
+* Preparation;
+* Implement the calculate.js module
+* Implement the operate.js module
+* Add calculate.js to the App component
+
 
 ### Built With 
 

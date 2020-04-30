@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unused-state */
 /* eslint-disable no-unused-vars */
-/* eslint-disable import/extensions */
 import React from 'react';
-import Big from 'big.js';
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 import './index.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+
 
 class App extends React.Component {
   constructor(props) {
