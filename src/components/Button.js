@@ -8,8 +8,7 @@ class Button extends React.Component {
   }
 
   handleClick() {
-    const { clickHandler } = this.props;
-    const { nameButton } = this.props;
+    const { clickHandler, nameButton } = this.props;
     clickHandler(nameButton);
   }
 
