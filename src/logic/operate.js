@@ -26,6 +26,10 @@ function operate(numberOne, numberTwo, operation) {
       total = x.times(y);
       break;
     case opertionCalc[3]:
+      if (numberOne === '0') {
+        total = 'INFINITY';
+        break;
+      }
       total = y.div(x);
       break;
     case opertionCalc[4]:
