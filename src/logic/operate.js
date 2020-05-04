@@ -1,4 +1,4 @@
-/* eslint-disable prefer-destructuring */
+/* eslint-disable import/extensions */
 import Big from 'big.js';
 
 function operate(numberOne, numberTwo, operation) {
