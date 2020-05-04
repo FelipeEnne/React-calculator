@@ -1,16 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({
-  nameButton, idButton, colorButton, wideButton,
-}) {
-  const wideB = wideButton ? '25%' : '50%';
+class Button extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  return (
-    <button type="button" className="button-calc" id={idButton} style={{ backgroundColor: colorButton, width: wideB }}>
-      {nameButton}
-    </button>
-  );
+  handleClick() {
+    const { clickHandler, nameButton } = this.props;
+    clickHandler(nameButton);
+  }
+
+
+  render() {
+    const {
+      nameButton, idButton, colorButton, wideButton,
+    } = this.props;
+
+    const wideB = wideButton ? '25%' : '50%';
+
+    return (
+      <button
+        type="button"
+        className="button-calc"
+        id={idButton}
+        style={{ backgroundColor: colorButton, width: wideB }}
+        onClick={this.handleClick}
+      >
+        {nameButton}
+      </button>
+    );
+  }
 }
 
 Button.propTypes = {
@@ -18,6 +39,7 @@ Button.propTypes = {
   idButton: PropTypes.string,
   colorButton: PropTypes.string,
   wideButton: PropTypes.bool,
+  clickHandler: PropTypes.func,
 };
 
 Button.defaultProps = {
@@ -25,6 +47,7 @@ Button.defaultProps = {
   idButton: '',
   colorButton: 'rgba(255, 165, 0, 0.79)',
   wideButton: true,
+  clickHandler: null,
 };
 
 export default Button;
