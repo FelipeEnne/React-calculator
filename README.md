@@ -48,7 +48,7 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 * Preparation;
 * Implement the calculate.js module;
 * Implement the operate.js module;
-* Add calculate.js to the App component
+* Add calculate.js to the App component.
 
 ### Event handlers 
 
