@@ -1,9 +1,7 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import ReactDom from 'react-dom';
-import App from './components/App';
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./components/App";
 
-
-const root = document.getElementById('root');
+const root = document.getElementById("root");
 
 ReactDom.render(<App />, root);

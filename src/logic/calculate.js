@@ -1,43 +1,44 @@
 /* eslint-disable no-unused-vars */
-import operate from './operate';
-
+import operate from "./operate";
 
 function calculate(dataCalc, buttonCalc) {
   let { total, next, operation } = dataCalc;
   let t = 0;
   if (total != null) {
-    t = total.split('');
+    t = total.split("");
   }
 
-  const errorMesg = ["It's not a number", 'Something is wrong click the AC'];
+  const errorMesg = ["It's not a number", "Something is wrong click the AC"];
 
   let countpont = 0;
   function countpontFunc(arr) {
     for (let i = 0; i < arr.length; i += 1) {
-      if (arr[i] === '.') {
+      if (arr[i] === ".") {
         countpont += 1;
       }
     }
   }
 
-
   switch (buttonCalc) {
-    case 'AC':
+    case "AC":
       next = null;
       total = null;
       operation = null;
       break;
-    case '+/-':
+    case "+/-":
       total = (parseFloat(total) * -1).toString();
       break;
-    case '%':
+    case "%":
       next = total;
       total = null;
       operation = buttonCalc;
       total = operate(total, next, operation).total.toString();
       next = total;
       break;
-    case '+': case '-': case 'x': case '÷':
+    case "+":
+    case "-":
+    case "x":
+    case "÷":
       countpontFunc(t);
       if (countpont > 1) {
         // eslint-disable-next-line no-console
@@ -51,14 +52,24 @@ function calculate(dataCalc, buttonCalc) {
       total = null;
       operation = buttonCalc;
       break;
-    case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9': case '.':
+    case "0":
+    case "1":
+    case "2":
+    case "3":
+    case "4":
+    case "5":
+    case "6":
+    case "7":
+    case "8":
+    case "9":
+    case ".":
       if (total == null) {
         total = buttonCalc;
       } else {
         total += buttonCalc;
       }
       break;
-    case '=':
+    case "=":
       countpontFunc(t);
       if (countpont > 1) {
         // eslint-disable-next-line no-console
@@ -80,9 +91,7 @@ function calculate(dataCalc, buttonCalc) {
       break;
   }
 
-  return (
-    { total, next, operation }
-  );
+  return { total, next, operation };
 }
 
 export default calculate;

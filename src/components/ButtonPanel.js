@@ -1,7 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Button from './Button';
-
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "./Button";
 
 class ButtonPanel extends React.Component {
   constructor(props) {
@@ -28,37 +27,37 @@ class ButtonPanel extends React.Component {
   }
 
   render() {
-    const gray = 'rgba(128, 128, 128, 0.22)';
+    const gray = "rgba(128, 128, 128, 0.22)";
     return (
       <div className="buttonPanel">
         <div className="panel-row">
-          {this.renderbutton('AC', 'ACid', gray)}
-          {this.renderbutton('+/-', '+/-id', gray)}
-          {this.renderbutton('%', '%id', gray)}
-          {this.renderbutton('÷', '÷id')}
+          {this.renderbutton("AC", "ACid", gray)}
+          {this.renderbutton("+/-", "+/-id", gray)}
+          {this.renderbutton("%", "%id", gray)}
+          {this.renderbutton("÷", "÷id")}
         </div>
         <div className="panel-row">
-          {this.renderbutton('7', '7id', gray)}
-          {this.renderbutton('8', '8id', gray)}
-          {this.renderbutton('9', '9id', gray)}
-          {this.renderbutton('x', 'xid')}
+          {this.renderbutton("7", "7id", gray)}
+          {this.renderbutton("8", "8id", gray)}
+          {this.renderbutton("9", "9id", gray)}
+          {this.renderbutton("x", "xid")}
         </div>
         <div className="panel-row">
-          {this.renderbutton('4', '4id', gray)}
-          {this.renderbutton('5', '5id', gray)}
-          {this.renderbutton('6', '6id', gray)}
-          {this.renderbutton('-', '-id')}
+          {this.renderbutton("4", "4id", gray)}
+          {this.renderbutton("5", "5id", gray)}
+          {this.renderbutton("6", "6id", gray)}
+          {this.renderbutton("-", "-id")}
         </div>
         <div className="panel-row">
-          {this.renderbutton('1', '1id', gray)}
-          {this.renderbutton('2', '2id', gray)}
-          {this.renderbutton('3', '3id', gray)}
-          {this.renderbutton('+', '+id')}
+          {this.renderbutton("1", "1id", gray)}
+          {this.renderbutton("2", "2id", gray)}
+          {this.renderbutton("3", "3id", gray)}
+          {this.renderbutton("+", "+id")}
         </div>
         <div className="panel-row">
-          {this.renderbutton('0', '0id', gray, false)}
-          {this.renderbutton('.', '.id', gray)}
-          {this.renderbutton('=', '=id')}
+          {this.renderbutton("0", "0id", gray, false)}
+          {this.renderbutton(".", ".id", gray)}
+          {this.renderbutton("=", "=id")}
         </div>
       </div>
     );
@@ -72,6 +71,5 @@ ButtonPanel.propTypes = {
 ButtonPanel.defaultProps = {
   clickHandler: null,
 };
-
 
 export default ButtonPanel;

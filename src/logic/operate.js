@@ -1,9 +1,8 @@
-/* eslint-disable import/extensions */
-import Big from 'big.js';
+import Big from "big.js";
 
 function operate(numberOne, numberTwo, operation) {
   let total;
-  const opertionCalc = ['+', '-', 'x', '÷', '%'];
+  const opertionCalc = ["+", "-", "x", "÷", "%"];
   let x = 0;
   let y = 0;
 
@@ -26,8 +25,8 @@ function operate(numberOne, numberTwo, operation) {
       total = x.times(y);
       break;
     case opertionCalc[3]:
-      if (numberOne === '0') {
-        total = 'INFINITY';
+      if (numberOne === "0") {
+        total = "INFINITY";
         break;
       }
       total = y.div(x);
@@ -39,9 +38,7 @@ function operate(numberOne, numberTwo, operation) {
       break;
   }
 
-  return (
-    { total }
-  );
+  return { total };
 }
 
 export default operate;

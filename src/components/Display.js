@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 function Display({ result }) {
   return (
@@ -16,7 +16,7 @@ Display.propTypes = {
 };
 
 Display.defaultProps = {
-  result: '0',
+  result: "0",
 };
 
 export default Display;

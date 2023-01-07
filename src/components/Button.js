@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 class Button extends React.Component {
   constructor(props) {
@@ -12,13 +12,10 @@ class Button extends React.Component {
     clickHandler(nameButton);
   }
 
-
   render() {
-    const {
-      nameButton, idButton, colorButton, wideButton,
-    } = this.props;
+    const { nameButton, idButton, colorButton, wideButton } = this.props;
 
-    const wideB = wideButton ? '25%' : '50%';
+    const wideB = wideButton ? "25%" : "50%";
 
     return (
       <button
@@ -43,9 +40,9 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  nameButton: '',
-  idButton: '',
-  colorButton: 'rgba(255, 165, 0, 0.79)',
+  nameButton: "",
+  idButton: "",
+  colorButton: "rgba(255, 165, 0, 0.79)",
   wideButton: true,
   clickHandler: null,
 };

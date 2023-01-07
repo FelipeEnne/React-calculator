@@ -1,9 +1,8 @@
-import React from 'react';
-import calculate from '../logic/calculate';
-import './index.css';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-
+import React from "react";
+import calculate from "../logic/calculate";
+import "./index.css";
+import Display from "./Display";
+import ButtonPanel from "./ButtonPanel";
 
 class App extends React.Component {
   constructor(props) {
@@ -32,7 +31,7 @@ class App extends React.Component {
     let { total } = this.state;
 
     if (total == null) {
-      total = '0';
+      total = "0";
     }
 
     return (
