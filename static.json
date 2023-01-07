@@ -6,7 +6,7 @@
   },
   "proxies": {
   "/api/": {
-    "origin": "${API_URL}"
+    "origin": "https://calculator-react-master.herokuapp.com/"
     }
   }
 }
