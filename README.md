@@ -25,7 +25,7 @@ The goal of this project is build a calculator using create-react-app, a tool bu
 * Delete the unnecessary file and assets;
 * Add the big.js;
 * Verify if everything is ok;
-* Deploy to Heroku (https://calculator-react-master.herokuapp.com/).
+* Deploy to Vercel (https://react-calculator-phi-five.vercel.app/).
 
 ### Create components
 
